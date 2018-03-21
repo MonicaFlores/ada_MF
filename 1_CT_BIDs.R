@@ -56,8 +56,8 @@ summary_CT <- clean %>% summarise(Unique_CT = n_distinct(CT_id_full))
 #233 unique CT, this is equal to number of obs in the dataset. 
 
 #Export clean file
-exp_path<- glue("{data_dir}/Clean/CT_BIDs.dta") 
-clean %>% write.dta(exp_path)
+exp_path<- glue("{data_dir}/Clean/CT_BIDs.csv") 
+clean %>% write.csv(exp_path)
 
 #Create new file with full list of CT and join it with CT_BIDs file
 
@@ -78,7 +78,7 @@ clean_CT<-raw %>%
 full_CT<- clean_CT %>% full_join(clean, by=c("CT_id", "CT_id_full", "areaCT_ft", "boro_name"))
 
 #Export full CT file
-exp_path2<- glue("{data_dir}/Clean/CT_BIDs_Full.dta") 
-full_CT %>% write.dta(exp_path2)
+exp_path2<- glue("{data_dir}/Clean/CT_BIDs_Full.csv") 
+full_CT %>% write.csv(exp_path2)
 
 
