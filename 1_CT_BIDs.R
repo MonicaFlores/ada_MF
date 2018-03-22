@@ -29,7 +29,7 @@ clean <- raw %>%
   mutate (BID_id = as.character(objectid),
           BID_id = str_pad(BID_id, 4, "left", pad = "0"),
           CT_id = ct2010,
-          CT_id_full = boro_ct201,
+          CT_id_full = glue('3600{boro_ct201}'),
           BID_name = bid,
           BID_date = date_creat,
           CT_a_weight = a_weight,
@@ -68,7 +68,7 @@ raw_CT<- glue("{data_dir}/draft/CT.dbf") %>%
 clean_CT<-raw %>%
   filter(!is.na(ct2010)) %>% 
   mutate (CT_id = ct2010,
-          CT_id_full = boro_ct201)%>%
+          CT_id_full = glue('3600{boro_ct201}'))%>%
   #remove dups
   group_by(CT_id_full) %>% filter(row_number(areaCT_ft) == 1) %>% 
   select (CT_id, CT_id_full, areaCT_ft, boro_name) %>% 
