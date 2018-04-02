@@ -1,6 +1,6 @@
 ## Applied Data Analysis for Public Policy
 ### NYU CUSP Spring 2018
-This repo contains both homeworks and research project on policy analysis. 
+This repo contains both personal homeworks and work for group research project on policy analysis. 
 
 ### Research Project Overview
 Our objective is to measure gentrification at the residential level and find out if the
