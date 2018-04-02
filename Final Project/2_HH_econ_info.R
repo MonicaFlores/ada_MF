@@ -362,5 +362,8 @@ clean_hh <- rent %>% left_join(income, by="CT_id_full") %>% left_join(sh_inc_ren
 #Export full data
 exp_path<- "/Users/MoniFlores/Desktop/NYU 4th semester/Data Analysis for Public Policy/HH/Clean"
 
-clean_hh %>% write.csv(glue("{exp_path}/CT_HHinfo_Full.csv"))
+clean_hh %>% write.csv2(glue("{exp_path}/CT_HHinfo_Full.csv"), na="")
 
+clean_hh %>% write.csv(glue("{exp_path}/CT_HHinfo_Full_2.csv"), na="")
+
+clean_hh %>% write.dta(glue("{exp_path}/CT_HHinfo_Full.dta"))
