@@ -2,7 +2,7 @@
 ### NYU Wagner / CUSP Spring 2018
 This repo contains both personal homeworks and work for group research project on policy analysis. 
 
-### Research Project Overview
+## Research Project Overview
 
 ## Predicting Gentrification
 
