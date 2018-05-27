@@ -1,15 +1,13 @@
 ## Applied Data Analysis for Public Policy
 ### NYU Wagner / CUSP Spring 2018
 This repo contains both personal homeworks and work for group research project on policy analysis. 
+Professors: Julia Lane and Daniela Hochfellner
 
 ## Research Project Overview
 
 ## Predicting Gentrification
 
- Data Analysis for Public Policy - Team 1
- NYU Wagner and CUSP - Spring 2018
- Professors: Julia Lane and Daniela Hochfellner
- Team Members: Matthew Barry, Monica Flores, Zarni Htet, Yinlingyan Wang
+Team Members: Matthew Barry, Monica Flores, Zarni Htet, Yinlingyan Wang
 
 **Our Research Focus**: Using neighborhood amenities, demographics and neighborhood level policies (like the implementation of Business Improvement Districts) to Predict Gentrification
 
